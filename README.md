@@ -1,27 +1,17 @@
 <div align="center">
-  <h3>terraform-azure-docker</h3>
+  <h1>terraform-azure-docker</h1>
   <p>Terraform Azure Docker image</p>
   <p>
     <!-- Build Status -->
-    <a href="https://actions-badge.atrox.dev/hansohn/terraform-azure-docker/goto?ref=main">
-      <img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fhansohn%2Fterraform-azure-docker%2Fbadge%3Fref%3Dmain&style=for-the-badge">
-    </a>
+    <a href="https://actions-badge.atrox.dev/hansohn/terraform-azure-docker/goto?ref=main"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fhansohn%2Fterraform-azure-docker%2Fbadge%3Fref%3Dmain&style=for-the-badge"></a>
     <!-- Github Tag -->
-    <a href="https://gitHub.com/hansohn/terraform-azure-docker/tags/">
-      <img src="https://img.shields.io/github/tag/hansohn/terraform-azure-docker.svg?style=for-the-badge">
-    </a>
+    <a href="https://gitHub.com/hansohn/terraform-azure-docker/tags/"><img src="https://img.shields.io/github/tag/hansohn/terraform-azure-docker.svg?style=for-the-badge"></a>
     <!-- Docker Pulls -->
-    <a href="https://hub.docker.com/r/hansohn/terraform-azure">
-      <img src="https://img.shields.io/docker/pulls/hansohn/terraform-azure.svg?style=for-the-badge">
-    </a>
+    <a href="https://hub.docker.com/r/hansohn/terraform-azure"><img src="https://img.shields.io/docker/pulls/hansohn/terraform-azure.svg?style=for-the-badge"></a>
     <!-- Docker Image Size -->
-    <a href="https://hub.docker.com/r/hansohn/terraform-azure">
-      <img src="https://img.shields.io/docker/image-size/hansohn/terraform-azure/latest.svg?style=for-the-badge">
-    </a>
+    <a href="https://hub.docker.com/r/hansohn/terraform-azure"><img src="https://img.shields.io/docker/image-size/hansohn/terraform-azure/latest.svg?style=for-the-badge"></a>
     <!-- License -->
-    <a href="https://github.com/hansohn/terraform-azure-docker/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/hansohn/terraform-azure-docker.svg?style=for-the-badge">
-    </a>
+    <a href="https://github.com/hansohn/terraform-azure-docker/blob/main/LICENSE"><img src="https://img.shields.io/github/license/hansohn/terraform-azure-docker.svg?style=for-the-badge"></a>
   </p>
 </div>
 
