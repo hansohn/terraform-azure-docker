@@ -197,11 +197,13 @@ AZURE_CLI_VERSION=2.88.0 make docker/build
 
 Images are automatically:
 
-- **Built and linted** on every push (multi-platform, without publishing)
-- **Published** when a version tag is pushed
-- **Refreshed** every Monday at 7am UTC to pick up the latest base-image security patches
+- **Built and linted** on every push to a non-default branch (multi-platform, without publishing)
+- **Published** on every push to `main` — `main` is what ships, and `latest` always tracks it
+- **Refreshed** every Monday at 7am UTC, rebuilding `main` to pick up the latest base-image security patches
 
-This ensures published images stay up-to-date with the latest base image security updates.
+Dependency-update PRs are built for verification while open, then published as
+soon as they merge. Git tags are historical markers and do not trigger a
+publish.
 
 ## Security
 
