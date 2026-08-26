@@ -214,8 +214,9 @@ This ensures published images stay up-to-date with the latest base image securit
 ## Related Images
 
 This image is one of a family of infrastructure-tooling images built from
-the same Makefile, workflow and Renovate pattern. The cloud-specific
-Terraform images all layer on top of `hansohn/terraform`.
+the same Makefile, workflow and Renovate pattern. `terraform-docker` and
+`cloudformation-docker` each build directly from Debian; the four
+cloud-specific Terraform images layer on top of `hansohn/terraform`.
 
 | Provider | Repo | Image | Contents |
 | :------: | ---- | ----- | -------- |
