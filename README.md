@@ -198,11 +198,13 @@ AZURE_CLI_VERSION=2.88.0 make docker/build
 
 Images are automatically:
 
-- **Built and linted** on every push (multi-platform, without publishing)
+- **Built and linted** on every push, including `main` (multi-platform, without publishing)
 - **Published** when a version tag is pushed
-- **Refreshed** every Monday at 7am UTC to pick up the latest base-image security patches
+- **Refreshed** every Monday at 9am UTC, rebuilding `main` so merged dependency updates and base-image security patches reach Docker Hub — two hours after the `hansohn/terraform` base image refreshes, so this image picks it up the same morning
 
-This ensures published images stay up-to-date with the latest base image security updates.
+Pushes to `main` are built for verification but not published. Merged
+dependency updates ship on the next weekly refresh, or immediately if you cut
+a release tag.
 
 ## Security
 
