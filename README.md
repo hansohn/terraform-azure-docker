@@ -28,6 +28,7 @@
 - [Customization](#customization)
 - [Build & Refresh Schedule](#build--refresh-schedule)
 - [Security](#security)
+- [Related Images](#related-images)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -209,6 +210,22 @@ This ensures published images stay up-to-date with the latest base image securit
 - The Azure CLI is installed from the Microsoft apt repository, whose signing key is pinned by fingerprint, and the TFLint AzureRM ruleset is checksum-verified at build time
 - Published images are scanned for vulnerabilities with Trivy
 - Security vulnerabilities? See our [Security Policy](.github/SECURITY.md)
+
+## Related Images
+
+This image is one of a family of infrastructure-tooling images built from
+the same Makefile, workflow and Renovate pattern. `terraform-docker` and
+`cloudformation-docker` each build directly from Debian; the four
+cloud-specific Terraform images layer on top of `hansohn/terraform`.
+
+| Provider | Repo | Image |
+| :------: | ---- | ----- |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" width="20" height="20"> | [terraform-docker](https://github.com/hansohn/terraform-docker) | [`hansohn/terraform`](https://hub.docker.com/r/hansohn/terraform) |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" width="20" height="20"> | [terraform-aws-docker](https://github.com/hansohn/terraform-aws-docker) | [`hansohn/terraform-aws`](https://hub.docker.com/r/hansohn/terraform-aws) |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" width="20" height="20"> | [terraform-azure-docker](https://github.com/hansohn/terraform-azure-docker) | [`hansohn/terraform-azure`](https://hub.docker.com/r/hansohn/terraform-azure) |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg" alt="DigitalOcean" width="20" height="20"> | [terraform-digitalocean-docker](https://github.com/hansohn/terraform-digitalocean-docker) | [`hansohn/terraform-digitalocean`](https://hub.docker.com/r/hansohn/terraform-digitalocean) |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" width="20" height="20"> | [terraform-google-docker](https://github.com/hansohn/terraform-google-docker) | [`hansohn/terraform-google`](https://hub.docker.com/r/hansohn/terraform-google) |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" width="20" height="20"> | [cloudformation-docker](https://github.com/hansohn/cloudformation-docker) | [`hansohn/cloudformation`](https://hub.docker.com/r/hansohn/cloudformation) |
 
 ## Contributing
 
