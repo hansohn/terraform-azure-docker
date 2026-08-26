@@ -199,7 +199,7 @@ Images are automatically:
 
 - **Built and linted** on every push to a non-default branch (multi-platform, without publishing)
 - **Published** on every push to `main` — `main` is what ships, and `latest` always tracks it
-- **Refreshed** every Monday at 7am UTC, rebuilding `main` to pick up the latest base-image security patches
+- **Refreshed** every Monday at 9am UTC, rebuilding `main` to pick up the latest base-image security patches — two hours after the `hansohn/terraform` base image refreshes, so this image picks it up the same morning
 
 Dependency-update PRs are built for verification while open, then published as
 soon as they merge. Git tags are historical markers and do not trigger a
