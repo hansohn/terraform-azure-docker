@@ -28,6 +28,7 @@
 - [Customization](#customization)
 - [Build & Refresh Schedule](#build--refresh-schedule)
 - [Security](#security)
+- [Related Images](#related-images)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -209,6 +210,21 @@ This ensures published images stay up-to-date with the latest base image securit
 - The Azure CLI is installed from the Microsoft apt repository, whose signing key is pinned by fingerprint, and the TFLint AzureRM ruleset is checksum-verified at build time
 - Published images are scanned for vulnerabilities with Trivy
 - Security vulnerabilities? See our [Security Policy](.github/SECURITY.md)
+
+## Related Images
+
+This image is one of a family of infrastructure-tooling images built from
+the same Makefile, workflow and Renovate pattern. The cloud-specific
+Terraform images all layer on top of `hansohn/terraform`.
+
+| Repo | Image | Contents |
+| ---- | ----- | -------- |
+| [terraform-docker](https://github.com/hansohn/terraform-docker) | [`hansohn/terraform`](https://hub.docker.com/r/hansohn/terraform) | Base Terraform toolchain — terraform, terragrunt, tflint, terraform-docs, trivy |
+| [terraform-aws-docker](https://github.com/hansohn/terraform-aws-docker) | [`hansohn/terraform-aws`](https://hub.docker.com/r/hansohn/terraform-aws) | Base image plus the AWS CLI and the TFLint AWS ruleset |
+| **terraform-azure-docker** (this repo) | [`hansohn/terraform-azure`](https://hub.docker.com/r/hansohn/terraform-azure) | Base image plus the Azure CLI and the TFLint AzureRM ruleset |
+| [terraform-digitalocean-docker](https://github.com/hansohn/terraform-digitalocean-docker) | [`hansohn/terraform-digitalocean`](https://hub.docker.com/r/hansohn/terraform-digitalocean) | Base image plus doctl, the DigitalOcean CLI |
+| [terraform-google-docker](https://github.com/hansohn/terraform-google-docker) | [`hansohn/terraform-google`](https://hub.docker.com/r/hansohn/terraform-google) | Base image plus the Google Cloud CLI and the TFLint Google ruleset |
+| [cloudformation-docker](https://github.com/hansohn/cloudformation-docker) | [`hansohn/cloudformation`](https://hub.docker.com/r/hansohn/cloudformation) | CloudFormation tooling — aws-cli, cfn-lint, rain, cfn-guard |
 
 ## Contributing
 
