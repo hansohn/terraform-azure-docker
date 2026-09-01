@@ -74,7 +74,7 @@ RUN /bin/bash -c 'set -e; \
 FROM hansohn/terraform:${TERRAFORM_VERSION} AS main
 ARG DEBIAN_FRONTEND=noninteractive
 # renovate: datasource=github-releases depName=Azure/azure-cli extractVersion=^azure-cli-(?<version>.+)$
-ARG AZURE_CLI_VERSION=2.89.1
+ARG AZURE_CLI_VERSION=2.90.0
 COPY --from=builder /etc/apt/keyrings/microsoft.gpg /etc/apt/keyrings/microsoft.gpg
 # The Azure CLI ships as a Debian package rather than a standalone archive, so
 # it is installed here instead of being staged in the builder: apt resolves the
