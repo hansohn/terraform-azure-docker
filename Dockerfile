@@ -6,7 +6,7 @@ ARG TERRAFORM_VERSION=1.16.4
 FROM hansohn/terraform:${TERRAFORM_VERSION} AS builder
 ARG DEBIAN_FRONTEND=noninteractive
 # renovate: datasource=github-releases depName=terraform-linters/tflint-ruleset-azurerm extractVersion=^v(?<version>.+)$
-ARG TFLINT_AZURERM_VERSION=0.32.0
+ARG TFLINT_AZURERM_VERSION=0.33.0
 # The Azure CLI apt repository is signed by the Microsoft release key. Trust is
 # pinned to this fingerprint; the armored key is fetched over HTTPS at build
 # time and rejected unless it matches, so key rotation can't silently widen
