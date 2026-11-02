@@ -1,5 +1,5 @@
 # renovate: datasource=docker depName=hansohn/terraform
-ARG TERRAFORM_VERSION=1.16.6
+ARG TERRAFORM_VERSION=1.17.1
 
 
 # builder
